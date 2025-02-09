@@ -1,0 +1,29 @@
+﻿<div class="question-container">
+    <h3 class="question-text">@Question</h3>
+    <div class="options">
+        @foreach (var option in FixedOptions)
+        {
+            <label class="option @(IsChecked(option) ? "selected" : "")">
+                <input type="radio" name="@Question" value="@option" @onchange="() => OnOptionSelected(option)" />
+                <div class="circle"></div>
+                <span class="option-text">@option</span>
+            </label>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Question { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> OptionSelected { get; set; }
+
+    private static readonly List<string> FixedOptions = new() { "сильно", "не дуже", "спокійний" };
+    private string SelectedOption;
+
+    private void OnOptionSelected(string option)
+    {
+        SelectedOption = option;
+        OptionSelected.InvokeAsync(option);
+    }
+
+    private bool IsChecked(string option) => option == SelectedOption;
+}

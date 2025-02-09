@@ -1,0 +1,53 @@
+﻿.question-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d1d1d1;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.option input {
+    display: none;
+}
+
+.option-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.option.selected .circle {
+    background-color: #6a1b9a; /* Фіолетове залиття при виборі */
+    border-color: #6a1b9a;
+}
+
+.option:hover .circle {
+    border-color: #8bc34a; /* Зелений колір рамки при наведенні */
+}
