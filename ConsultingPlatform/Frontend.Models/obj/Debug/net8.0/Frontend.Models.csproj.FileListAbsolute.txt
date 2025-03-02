@@ -1,0 +1,12 @@
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\bin\Debug\net8.0\Frontend.Models.deps.json
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\bin\Debug\net8.0\Frontend.Models.dll
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\bin\Debug\net8.0\Frontend.Models.pdb
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.AssemblyInfoInputs.cache
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.AssemblyInfo.cs
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.csproj.CoreCompileInputs.cache
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.sourcelink.json
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.dll
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\refint\Frontend.Models.dll
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\Frontend.Models.pdb
+C:\Projects\consulting-platform\ConsultingPlatform\Frontend.Models\obj\Debug\net8.0\ref\Frontend.Models.dll

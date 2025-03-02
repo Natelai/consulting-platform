@@ -44,10 +44,10 @@
 }
 
 .option.selected .circle[b-6pg5bftn7l] {
-    background-color: #6a1b9a; /* Фіолетове залиття при виборі */
+    background-color: #6a1b9a;
     border-color: #6a1b9a;
 }
 
 .option:hover .circle[b-6pg5bftn7l] {
-    border-color: #8bc34a; /* Зелений колір рамки при наведенні */
+    border-color: #8bc34a;
 }

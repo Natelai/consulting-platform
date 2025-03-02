@@ -1,29 +1,57 @@
-﻿<div class="question-container">
+﻿@using Frontend.Models.Dtos
+@using Frontend.Models.Dtos.Enums
+<div class="question-container">
     <h3 class="question-text">@Question</h3>
     <div class="options">
-        @foreach (var option in FixedOptions)
+        @foreach (var option in _options)
         {
             <label class="option @(IsChecked(option) ? "selected" : "")">
-                <input type="radio" name="@Question" value="@option" @onchange="() => OnOptionSelected(option)" />
+                <input type="radio" name="@Question" value="@option.Key" @onchange="() => OnOptionSelected(option)" />
                 <div class="circle"></div>
-                <span class="option-text">@option</span>
+                <span class="option-text">@option.Key</span>
             </label>
         }
     </div>
 </div>
 
 @code {
-    [Parameter] public string Question { get; set; } = string.Empty;
-    [Parameter] public EventCallback<string> OptionSelected { get; set; }
 
-    private static readonly List<string> FixedOptions = new() { "сильно", "не дуже", "спокійний" };
-    private string SelectedOption;
+    [Parameter] 
+    public required string Question { get; set; } = string.Empty;
 
-    private void OnOptionSelected(string option)
+    [Parameter] 
+    public EventCallback<DreyfusSurveyResults> AnswerChanged { get; set; }
+
+    [Parameter]
+    public required DreyfusSurveyResults Answer { get; set; }
+
+    [Parameter]
+    public required DreyfusBlock QuestionBlock { get; set; }
+
+    [Parameter]
+    public required Dictionary<string, int> Options
     {
-        SelectedOption = option;
-        OptionSelected.InvokeAsync(option);
+        get => _options;
+        set
+        {
+            if (value is not { Count: 3 })
+            {
+                throw new ArgumentException("Options must contain exactly 3 elements.");
+            }
+
+            _options = value;
+        }
     }
 
-    private bool IsChecked(string option) => option == SelectedOption;
+    private Dictionary<string, int> _options = null!;
+    private KeyValuePair<string, int> _selectedOption;
+
+    private void OnOptionSelected(KeyValuePair<string, int> option)
+    {
+        Answer?.AddResponse(QuestionBlock, option.Value);
+        _selectedOption = option;
+        AnswerChanged.InvokeAsync(Answer);
+    }
+
+    private bool IsChecked(KeyValuePair<string, int> option) => _selectedOption.Equals(option);
 }

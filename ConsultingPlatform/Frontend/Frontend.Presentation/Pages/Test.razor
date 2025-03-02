@@ -1,8 +1,99 @@
 ﻿@page "/test"
+@using Frontend.Models.Defaults
+@using Frontend.Models.Dtos
+@using Frontend.Models.Dtos.Enums
 @using Frontend.Presentation.Components
 
-<TestQuestion Question="Sosal?"></TestQuestion>
+<RadzenCard Style="height:80vh">
+
+    <div style=@(_selectedBlock != DreyfusBlock.Novice ? "display:none" : "")>
+        <TestQuestion QuestionBlock="DreyfusBlock.Novice" Question=@DreyfusQuestions.Question1.Question
+                      Options=@DreyfusQuestions.Question1.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Novice" Question=@DreyfusQuestions.Question2.Question
+                      Options=@DreyfusQuestions.Question2.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Novice" Question=@DreyfusQuestions.Question3.Question
+                      Options=@DreyfusQuestions.Question3.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Novice" Question=@DreyfusQuestions.Question4.Question
+                      Options=@DreyfusQuestions.Question4.QuestionRates @bind-Answer="_results" />
+    </div>
+    
+    <div style=@(_selectedBlock != DreyfusBlock.AdvancedBeginner ? "display:none" : "")>
+        <TestQuestion QuestionBlock="DreyfusBlock.AdvancedBeginner" Question=@DreyfusQuestions.Question5.Question
+                      Options=@DreyfusQuestions.Question5.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.AdvancedBeginner" Question=@DreyfusQuestions.Question6.Question
+                      Options=@DreyfusQuestions.Question6.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.AdvancedBeginner" Question=@DreyfusQuestions.Question7.Question
+                      Options=@DreyfusQuestions.Question7.QuestionRates @bind-Answer="_results" />
+    </div>
+    
+    <div style=@(_selectedBlock != DreyfusBlock.Competent ? "display:none" : "")>
+        <TestQuestion QuestionBlock="DreyfusBlock.Competent" Question=@DreyfusQuestions.Question8.Question
+                      Options=@DreyfusQuestions.Question8.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Competent" Question=@DreyfusQuestions.Question9.Question
+                      Options=@DreyfusQuestions.Question9.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Competent" Question=@DreyfusQuestions.Question10.Question
+                      Options=@DreyfusQuestions.Question10.QuestionRates @bind-Answer="_results" />
+    </div>
+    
+    <div style=@(_selectedBlock != DreyfusBlock.Proficient ? "display:none" : "")>
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question11.Question
+                      Options=@DreyfusQuestions.Question11.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question12.Question
+                      Options=@DreyfusQuestions.Question12.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question13.Question
+                      Options=@DreyfusQuestions.Question13.QuestionRates @bind-Answer="_results" />
+    </div>
+    
+    <div style=@(_selectedBlock != DreyfusBlock.Expert ? "display:none" : "")>
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question14.Question
+                      Options=@DreyfusQuestions.Question14.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question15.Question
+                      Options=@DreyfusQuestions.Question15.QuestionRates @bind-Answer="_results" />
+
+        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question16.Question
+                      Options=@DreyfusQuestions.Question16.QuestionRates @bind-Answer="_results" />
+    </div>
+
+</RadzenCard>
+
+<RadzenStack Gap="20px" Orientation="Orientation.Horizontal" Style="margin-top:10px">
+    <div style="display:flex;flex-direction:row">
+        <RadzenButton Text="Previous" ButtonStyle="ButtonStyle.Secondary"
+                      Disabled=@(_selectedBlock == DreyfusBlock.Novice)
+                      Style="width:100px;padding:0"
+                      Click="PreviousHandler"></RadzenButton>
+
+        <RadzenButton Text="Next" ButtonStyle="ButtonStyle.Primary"
+                      Disabled=@(_selectedBlock == DreyfusBlock.Expert)
+                      Style="width:100px;padding:0"
+                      Click="NextHandler"/>
+    </div>
+    
+</RadzenStack>
 
 @code {
+    private DreyfusSurveyResults _results = new();
+    private DreyfusBlock _selectedBlock = DreyfusBlock.Novice;
 
+    public void NextHandler()
+    {
+        _selectedBlock++;
+        StateHasChanged();
+    }
+
+    public void PreviousHandler()
+    {
+        _selectedBlock--;
+        StateHasChanged();
+    }
 }

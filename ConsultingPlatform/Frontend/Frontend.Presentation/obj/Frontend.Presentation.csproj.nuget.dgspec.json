@@ -4,6 +4,73 @@
     "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj": {}
   },
   "projects": {
+    "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Frontend.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Frontend.Models.csproj",
+        "projectName": "Frontend.Models",
+        "projectPath": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Frontend.Models.csproj",
+        "packagesPath": "C:\\Users\\Sviat\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sviat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\CustomNugets": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.intenselab.eu:8443/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,7 +100,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Frontend.Models.csproj": {
+                "projectPath": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Frontend.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

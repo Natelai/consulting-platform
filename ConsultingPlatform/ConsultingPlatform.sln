@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{43C4E5C7-DD60-45CE-98B1-477491DFD9EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend.Presentation", "Frontend\Frontend.Presentation\Frontend.Presentation.csproj", "{3D318464-60F3-4CCB-B783-7028CCE8FD2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63} = {C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend.Models", "Frontend.Models\Frontend.Models.csproj", "{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +22,16 @@ Global
 		{3D318464-60F3-4CCB-B783-7028CCE8FD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D318464-60F3-4CCB-B783-7028CCE8FD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D318464-60F3-4CCB-B783-7028CCE8FD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3D318464-60F3-4CCB-B783-7028CCE8FD2A} = {43C4E5C7-DD60-45CE-98B1-477491DFD9EE}
+		{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63} = {43C4E5C7-DD60-45CE-98B1-477491DFD9EE}
 	EndGlobalSection
 EndGlobal
