@@ -1,0 +1,62 @@
+# ASP.NET Core specific
+bin/
+obj/
+*.dbmdl
+*.publishsettings
+*.pubxml
+*.suo
+*.user
+*.vs/
+.vscode/
+*.ncrunchsolution
+*.ncrunchproject
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs and crash reports
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.mdf
+*.ldf
+*.sqlite
+pgdata/
+docker-entrypoint-initdb.d/
+
+# Node.js dependencies (if using React/Blazor WebAssembly)
+node_modules/
+dist/
+build/
+
+# Dependencies
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Rider & JetBrains IDEs
+.idea/
+*.iml
+
+# Visual Studio Code settings
+.vscode/
+
+# macOS and Linux system files
+.DS_Store
+*.swp
+._*
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# User-specific files
+*.bak
+*.cache
+*.pid
+*.seed

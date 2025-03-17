@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\pages\\test.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\pages\\test.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\backend\\consulting.presentation\\programextensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|solutionrelative:backend\\consulting.presentation\\programextensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}|Frontend.Models\\Frontend.Models.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend.models\\defaults\\dreyfusquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5810745-4DB0-4F9C-A1A5-403DBB1BEB63}|Frontend.Models\\Frontend.Models.csproj|solutionrelative:frontend.models\\defaults\\dreyfusquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\backend\\consulting.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|solutionrelative:backend\\consulting.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\components\\testquestion.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\components\\testquestion.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\backend\\consulting.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4BD85A8-B847-421D-8864-E66523B4D914}|Backend\\Consulting.Presentation\\Consulting.Presentation.csproj|solutionrelative:backend\\consulting.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\components\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\components\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|c:\\projects\\consulting-platform\\consultingplatform\\frontend\\frontend.presentation\\pages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D318464-60F3-4CCB-B783-7028CCE8FD2A}|Frontend\\Frontend.Presentation\\Frontend.Presentation.csproj|solutionrelative:frontend\\frontend.presentation\\pages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BBFF5C98-EC54-48A1-8122-EEB3D6CF4B72}|Backend\\Consulting.Infrastructure\\Consulting.Infrastructure.csproj|c:\\projects\\consulting-platform\\consultingplatform\\backend\\consulting.infrastructure\\db\\seeders\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBFF5C98-EC54-48A1-8122-EEB3D6CF4B72}|Backend\\Consulting.Infrastructure\\Consulting.Infrastructure.csproj|solutionrelative:backend\\consulting.infrastructure\\db\\seeders\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,142 +70,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DreyfusQuestions.cs",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Defaults\\DreyfusQuestions.cs",
-              "RelativeDocumentMoniker": "Frontend.Models\\Defaults\\DreyfusQuestions.cs",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend.Models\\Defaults\\DreyfusQuestions.cs",
-              "RelativeToolTip": "Frontend.Models\\Defaults\\DreyfusQuestions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Consulting.Presentation\\Program.cs",
+              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\Program.cs",
+              "RelativeToolTip": "Backend\\Consulting.Presentation\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T10:18:42.14Z",
+              "WhenOpened": "2025-03-17T21:43:55.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TestQuestion.razor.css",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Components\\TestQuestion.razor.css",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Components\\TestQuestion.razor.css",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Components\\TestQuestion.razor.css",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Components\\TestQuestion.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-25T10:12:16.969Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Backend\\Consulting.Presentation\\appsettings.Development.json",
+              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\appsettings.Development.json",
+              "RelativeToolTip": "Backend\\Consulting.Presentation\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T21:43:19.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Test.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Pages\\Test.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Pages\\Test.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Pages\\Test.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Pages\\Test.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD8AAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T11:50:33.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainLayout.razor.css",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor.css",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor.css",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor.css",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor.css",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwEwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-09T11:22:44.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "app.css",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\css\\app.css",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\wwwroot\\css\\app.css",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\css\\app.css",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\wwwroot\\css\\app.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-09T11:22:14.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Header.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Components\\Header.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Components\\Header.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Components\\Header.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Components\\Header.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T11:10:53.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Program.cs",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Program.cs",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\ProgramExtensions\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Backend\\Consulting.Presentation\\ProgramExtensions\\DependencyInjection.cs",
+              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Presentation\\ProgramExtensions\\DependencyInjection.cs*",
+              "RelativeToolTip": "Backend\\Consulting.Presentation\\ProgramExtensions\\DependencyInjection.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T10:58:33.112Z",
+              "WhenOpened": "2025-03-17T21:33:39.267Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T10:57:35.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginPage.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Pages\\LoginPage.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Pages\\LoginPage.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Pages\\LoginPage.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Pages\\LoginPage.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T10:53:48.905Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T10:52:12.392Z",
+              "Title": "IdentitySeeder.cs",
+              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Infrastructure\\db\\Seeders\\IdentitySeeder.cs",
+              "RelativeDocumentMoniker": "Backend\\Consulting.Infrastructure\\db\\Seeders\\IdentitySeeder.cs",
+              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Backend\\Consulting.Infrastructure\\db\\Seeders\\IdentitySeeder.cs",
+              "RelativeToolTip": "Backend\\Consulting.Infrastructure\\db\\Seeders\\IdentitySeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T21:31:05.414Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\App.razor",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.Presentation\\App.razor",
-              "ToolTip": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\App.razor",
-              "RelativeToolTip": "Frontend\\Frontend.Presentation\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T10:50:27.242Z"
             }
           ]
         }
