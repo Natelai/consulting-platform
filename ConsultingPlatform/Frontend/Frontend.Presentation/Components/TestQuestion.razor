@@ -3,12 +3,12 @@
 <div class="question-container">
     <h3 class="question-text">@Question</h3>
     <div class="options">
-        @foreach (var option in _options)
+        @foreach (var option in _options.Select((value, index) => new { value, index }))
         {
-            <label class="option @(IsChecked(option) ? "selected" : "")">
-                <input type="radio" name="@Question" value="@option.Key" @onchange="() => OnOptionSelected(option)" />
-                <div class="circle"></div>
-                <span class="option-text">@option.Key</span>
+            <label class="option @(IsChecked(option.value) ? "selected" : "")">
+                <input type="radio" name="@Question" value="@option.value.Key" @onchange="() => OnOptionSelected(option.value)" />
+                <div class="circle @GetCircleClass(option.index)"></div>
+                <span class="option-text">@option.value.Key</span>
             </label>
         }
     </div>
@@ -54,4 +54,15 @@
     }
 
     private bool IsChecked(KeyValuePair<string, int> option) => _selectedOption.Equals(option);
+
+    private string GetCircleClass(int index)
+    {
+        return index switch
+        {
+            0 => "purple", 
+            1 => "grey",  
+            2 => "green", 
+            _ => ""
+        };
+    }
 }

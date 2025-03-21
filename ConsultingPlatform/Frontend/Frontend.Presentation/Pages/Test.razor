@@ -66,17 +66,26 @@
 
 </RadzenCard>
 
-<RadzenStack Gap="20px" Orientation="Orientation.Horizontal" Style="margin-top:10px">
-    <div style="display:flex;flex-direction:row">
+<RadzenStack Gap="20px" Orientation="Orientation.Horizontal" Style="margin-top:10px;  justify-content:center !important;">
+    <div style="gap: 50px; display:flex;flex-direction:row; align-items:center;">
         <RadzenButton Text="Previous" ButtonStyle="ButtonStyle.Secondary"
                       Disabled=@(_selectedBlock == DreyfusBlock.Novice)
-                      Style="width:100px;padding:0"
+                      Style="width:100px;padding:0; background-color: #BA68C8;"
                       Click="PreviousHandler"></RadzenButton>
-
-        <RadzenButton Text="Next" ButtonStyle="ButtonStyle.Primary"
-                      Disabled=@(_selectedBlock == DreyfusBlock.Expert)
-                      Style="width:100px;padding:0"
-                      Click="NextHandler"/>
+                      
+        @if (_selectedBlock == DreyfusBlock.Expert)
+        {
+            <RadzenButton Text="Finish" ButtonStyle="ButtonStyle.Primary"
+                          Style="width:100px;padding:0; background-color: mediumseagreen;"
+                          Click="NextHandler"/>
+        }
+        else
+        {
+            <RadzenButton Text="Next" ButtonStyle="ButtonStyle.Primary"
+                          Style="width:100px;padding:0; background-color: #81C784;"
+                          Click="NextHandler"/>
+        }
+        
     </div>
     
 </RadzenStack>

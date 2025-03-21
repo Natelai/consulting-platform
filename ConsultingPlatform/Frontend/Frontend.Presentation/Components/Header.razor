@@ -1,14 +1,18 @@
-﻿<RadzenStack Orientation="Orientation.Horizontal" Gap="25px" Style="width:100%" JustifyContent="JustifyContent.SpaceBetween">
+﻿@inject NavigationManager _nav
+
+<RadzenStack Orientation="Orientation.Horizontal" Gap="25px" Style="width:100%" JustifyContent="JustifyContent.SpaceBetween">
     
-    <RadzenStack Orientation="Orientation.Horizontal">
-        <RadzenImage Style="height:50px;width:auto" Path="./assets/logo.png" />
-        <RadzenText TextStyle="TextStyle.DisplayH4" Style="margin:unset; font-weight:bold;display:flex;align-items:center">WebSite</RadzenText>
+    <RadzenStack Orientation="Orientation.Horizontal" Style="align-items:center; gap:10px;">
+        <NavLink class="nav-link" href="/" Match="NavLinkMatch.All" style="display:flex; align-items:center; gap:10px;">
+            <RadzenImage Style="height:50px; width:auto; pointer-events: none;" Path="./assets/logo.png" />
+            <RadzenText TextStyle="TextStyle.DisplayH4" Style="font-weight:bold; pointer-events: none;">WebSite</RadzenText>
+        </NavLink>
     </RadzenStack>
     
-    <RadzenStack Style="with:50%">
-        <RadzenTabs Style="padding:unset">
+    <RadzenStack Style="width:50%; align-items:center;">
+        <RadzenTabs Style="padding:unset; padding-left: 50px;" SelectedIndexChanged="OnTabChanged">
             <Tabs >
-                <RadzenTabsItem Style="padding:unset" Text="Тест Дрейфус">
+                <RadzenTabsItem  Style="padding:unset" Text="Тест Дрейфус" >
                 </RadzenTabsItem>
                 <RadzenTabsItem Style="padding:unset" Text="Тест Характеристик">
                 </RadzenTabsItem>
@@ -18,12 +22,30 @@
         </RadzenTabs>
     </RadzenStack>
     
-    <RadzenStack Orientation="Orientation.Horizontal" Style="margin-left:auto;align-items:center !important">
-        <RadzenIcon Icon="account_circle" />
-        <RadzenIcon Icon="logout" />
+    <RadzenStack Orientation="Orientation.Horizontal" Style="align-items:center !important">
+        <NavLink href="/login" style="color: black; text-decoration: none;">
+            <RadzenIcon Icon="account_circle" Style="font-size:28px; cursor:pointer;" />
+        </NavLink>
+        <NavLink href="/login" style="color: black; text-decoration: none;">
+            <RadzenIcon Icon="logout" Style="font-size:28px; cursor:pointer; margin-left: 0;" />
+        </NavLink>
     </RadzenStack>
 </RadzenStack>
 
 @code {
-
+    private void OnTabChanged(int selectedIndex)
+    {
+        switch (selectedIndex)
+        {
+            case 0:
+                _nav.NavigateTo("/test");  
+                break;
+            case 1:
+                _nav.NavigateTo("/characteristics");  
+                break;
+            case 2:
+                _nav.NavigateTo("/vacancies");  
+                break;
+        }
+    }
 }
