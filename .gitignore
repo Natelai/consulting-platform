@@ -1,62 +1,49 @@
-# ASP.NET Core specific
+# Папка з білдами
 bin/
 obj/
-*.dbmdl
-*.publishsettings
-*.pubxml
-*.suo
-*.user
-*.vs/
+
+# Налаштування середовища розробки
 .vscode/
-*.ncrunchsolution
-*.ncrunchproject
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# Logs and crash reports
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Database
-*.mdf
-*.ldf
-*.sqlite
-pgdata/
-docker-entrypoint-initdb.d/
-
-# Node.js dependencies (if using React/Blazor WebAssembly)
-node_modules/
-dist/
-build/
-
-# Dependencies
-*.nupkg
-*.snupkg
-packages/
-.nuget/
-
-# Rider & JetBrains IDEs
 .idea/
-*.iml
-
-# Visual Studio Code settings
-.vscode/
-
-# macOS and Linux system files
 .DS_Store
-*.swp
-._*
 
-# Windows system files
-Thumbs.db
-desktop.ini
+# Логи
+*.log
+logs/
+LogFiles/
 
-# User-specific files
-*.bak
-*.cache
-*.pid
-*.seed
+# Файли користувацьких налаштувань Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Папка з кешем
+_ReSharper*/ 
+*.sln.cache
+
+# Temporary files, build results and
+# build directories (Mono Auto Generated)
+mono_crash.*
+
+# Конфігураційні файли JetBrains Rider
+.idea/
+
+# Файли конфігурацій з IIS
+.vs/ 
+debug.log
+.env
+
+# Інші тимчасові файли
+*.tmp
+*.temp
+
+# Coverage
+*.coverage
+*.coveragexml
+
+# Пакети Node
+node_modules/
+temp/
