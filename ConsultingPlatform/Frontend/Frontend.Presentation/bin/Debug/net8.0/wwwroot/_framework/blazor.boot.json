@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Frontend.Presentation",
   "resources": {
-    "hash": "sha256-kGXVDlr1fqdNau/BWJ7Pe25PFqSwBpYqjya2H2x2BrU=",
+    "hash": "sha256-2g4Qkzn1lf9kpx12wKrCBKDfWNuYiD2KRT6jJPrg6yk=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -20,6 +20,7 @@
     "assembly": {
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-MU7sWxRNN2saeKjeKjEzOcHScadiqpZSFHmm9pRAgXQ=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-b7K6lrR2/olkwgWg5icEuBtqoA6oubYSYBPNUi1p0x0=",
+      "Microsoft.AspNetCore.Components.Authorization.wasm": "sha256-iz5B2yBt3lLo72opv8EgGfwKuGTtvyk+i47hkblx6x8=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-Go1+KknLmUt4Al9mE6Zub4w1Ep6UQ8eoUZFkOqflpTk=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-nlZiwSbZpMVqGJeD62dVo/h4C08w3B9e28OTn+axSYk=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-lbETL2gMDpYpWns34za5WduQnviXuzMXnY2iNELZYPI=",
@@ -211,12 +212,12 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "Frontend.Models.wasm": "sha256-WIR2lroc12KyURv71OXlH0/b/FUzDlZxi+fgD+OyqeY=",
-      "Frontend.Presentation.wasm": "sha256-fnr1KVLOcKgEjxPYAOGnsrkXKIY+WsBzo7PtVURvk9g="
+      "Frontend.Models.wasm": "sha256-iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94=",
+      "Frontend.Presentation.wasm": "sha256-Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE="
     },
     "pdb": {
-      "Frontend.Models.pdb": "sha256-VV4X/Ax+Q440nPmyT4OYSiFq9BWITLJk5EPqlrYXy0I=",
-      "Frontend.Presentation.pdb": "sha256-F/cJcZdkfyRZoMX5dZnrrCr1MivOkYU4j0tqigGbOy4="
+      "Frontend.Models.pdb": "sha256-GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys=",
+      "Frontend.Presentation.pdb": "sha256-bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0="
     }
   },
   "cacheBootResources": true,

@@ -1,0 +1,90 @@
+﻿@page "/login"
+@using Frontend.Presentation.Services
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager Navigation
+@inject HttpClient Http
+@inject IJSRuntime Js
+@inject AuthenticationStateProvider AuthStateProvider
+@layout AuthLayout
+
+<div style="height: 100vh; display: flex; justify-content: center; align-items: center; background-image: url('./assets/login-bg.png'); background-size: 90% cover; background-position: center;">
+    <RadzenCard Style="width:30%; height:45%; display:flex; flex-direction:column; gap:15px;">
+        <RadzenText Style="width:100%; text-align:center">
+            Log into your account
+        </RadzenText>
+
+        <RadzenStack Gap="0">
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3" Style="margin-bottom:2px">Login</RadzenText>
+            <RadzenTextBox Style="width: 100%" @bind-Value="email" />
+        </RadzenStack>
+
+        <RadzenStack Gap="0">
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3" Style="margin-bottom:2px">Password</RadzenText>
+            <RadzenTextBox Style="width: 100%" @bind-Value="password" Type="Radzen.TextBoxType.Password" />
+        </RadzenStack>
+
+        <RadzenButton Click="LoginUser" Disabled="@isLoading">
+            @(isLoading ? "Logging in..." : "Login")
+        </RadzenButton>
+
+        <RadzenText @onclick=@(() => Navigation.NavigateTo("/register", true))
+                    Style="text-decoration:underline;width:100%;text-align:center;cursor:pointer">SignUp now!</RadzenText>
+
+        <RadzenText @onclick=@(() => Navigation.NavigateTo("/resetRequest", true))
+                    Style="text-decoration:underline;width:100%;text-align:center;cursor:pointer">Forgot your password?</RadzenText>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <RadzenAlert Severity="AlertSeverity.Error">@errorMessage</RadzenAlert>
+        }
+    </RadzenCard>
+</div>
+
+@code {
+    private string email = "";
+    private string password = "";
+    private string errorMessage = "";
+    private bool isLoading = false;
+
+    private async Task LoginUser()
+    {
+        isLoading = true;
+        errorMessage = "";
+
+        var loginData = new { Email = email, Password = password };
+        var response = await Http.PostAsJsonAsync("https://localhost:7100/login", loginData);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var loginResult = await response.Content.ReadFromJsonAsync<LoginResponse>();
+
+            if (loginResult != null && loginResult.IsSuccess && !string.IsNullOrEmpty(loginResult.Token))
+            {
+                await Js.InvokeVoidAsync("localStorage.setItem", "authToken", loginResult.Token);
+
+                if (AuthStateProvider is CustomAuthStateProvider authProvider)
+                {
+                    authProvider.MarkUserAsAuthenticated(loginResult.Token);
+                }
+
+                Navigation.NavigateTo("/", true);
+            }
+            else
+            {
+                errorMessage = "Login failed. Please check your credentials.";
+            }
+        }
+        else
+        {
+            errorMessage = "Server error. Please try again later.";
+        }
+
+        isLoading = false;
+    }
+
+    private class LoginResponse
+    {
+        public bool IsSuccess { get; set; }
+        public string? Token { get; set; }
+    }
+}

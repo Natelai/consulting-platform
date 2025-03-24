@@ -1,5 +1,10 @@
+wwwroot\assets\error-icon.png
+wwwroot\assets\login-bg.png
 wwwroot\assets\logo.png
+wwwroot\assets\success-icon.png
+wwwroot\assets\waiting-icon.png
 wwwroot\css\app.css
+wwwroot\css\auth.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png

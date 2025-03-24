@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    width: 160px;
     transition: all 0.3s ease;
 }
 
@@ -30,8 +31,20 @@
     border: 2px solid #d1d1d1;
     border-radius: 50%;
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: transparent;
 }
+
+    .circle.green[b-6pg5bftn7l] {
+        border-color: #81C784;
+    }
+
+    .circle.grey[b-6pg5bftn7l] {
+        border-color: #CFD8DC; /* М'якший сірий */
+    }
+
+    .circle.purple[b-6pg5bftn7l] {
+        border-color: #BA68C8; /* М'якший фіолетовий */
+    }
 
 .option input[b-6pg5bftn7l] {
     display: none;
@@ -44,10 +57,24 @@
 }
 
 .option.selected .circle[b-6pg5bftn7l] {
-    background-color: #6a1b9a;
-    border-color: #6a1b9a;
+    background-color: transparent;
 }
 
+    .option.selected .circle.green[b-6pg5bftn7l] {
+        background-color: #81C784; /* Легкий зелений */
+        border-color: #81C784;
+    }
+
+    .option.selected .circle.grey[b-6pg5bftn7l] {
+        background-color: #CFD8DC; /* Легкий сірий */
+        border-color: #CFD8DC;
+    }
+
+    .option.selected .circle.purple[b-6pg5bftn7l] {
+        background-color: #BA68C8; /* Легкий фіолетовий */
+        border-color: #BA68C8;
+    }
+
 .option:hover .circle[b-6pg5bftn7l] {
-    border-color: #8bc34a;
+    border-color: #000000;
 }

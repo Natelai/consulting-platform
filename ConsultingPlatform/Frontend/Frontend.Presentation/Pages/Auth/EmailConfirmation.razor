@@ -1,0 +1,104 @@
+﻿@page "/email-confirmation"
+@inject NavigationManager Navigation
+@inject HttpClient Http
+@inject IJSRuntime Js
+@layout AuthLayout
+
+<div class="confirmation-container">
+    <div class="confirmation-card">
+        @if (status == "success")
+        {
+            <h2>Вітаємо!</h2>
+            <p>Ваш email було підтверджено. Ви можете увійти в додаток!</p>
+            <img src="/assets/success-icon.png" class="confirmation-icon" alt="Success">
+            <button @onclick="RedirectToLogin" class="resend-button">Увійти в додаток</button>
+        }
+        else if (status == "failure")
+        {
+            <h2>Упс!</h2>
+            <p>Щось пішло не так під час підтвердження Вашого Email. Спробуйте ще раз пізніше.</p>
+            <img src="/assets/error-icon.png" class="confirmation-icon" alt="Error">
+        }
+        else if (status == "invalid")
+        {
+            <h2>Неправильне посилання</h2>
+            <p>Посилання неправильне, або його термін вичерпано.</p>
+            <img src="/assets/error-icon.png" class="confirmation-icon" alt="Error">
+
+            @if (!isWaiting)
+            {
+                <button @onclick="ResendConfirmationEmail" class="resend-button">Надіслати лист повторно</button>
+            }
+            else
+            {
+                <p class="timer-message">Спробуйте ще раз через @timer сек.</p>
+            }
+        }
+        else if (status == "waiting")
+        {
+            <h2>Перевірте скриньку</h2>
+            <p>Лист для активації акаунту було надіслано на пошту:</p>
+            <p><strong>@email</strong></p>
+            <img src="/assets/waiting-icon.png" class="confirmation-icon" alt="Waiting">
+
+            @if (!isWaiting)
+            {
+                <button @onclick="ResendConfirmationEmail" class="resend-button">Надіслати лист повторно</button>
+            }
+            else
+            {
+                <p class="timer-message">Спробуйте ще раз через @timer сек.</p>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private string status;
+    private string email;
+    private bool isWaiting = false;
+    private int timer = 60;
+
+    protected override void OnInitialized()
+    {
+        var uri = Navigation.Uri;
+        var queryParams = System.Web.HttpUtility.ParseQueryString(new Uri(uri).Query);
+        status = queryParams["status"] ?? "invalid";
+        email = queryParams["email"];
+    }
+
+    private async Task ResendConfirmationEmail()
+    {
+        if (string.IsNullOrEmpty(email))
+        {
+            return;
+        }
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7100/resend-confirmation", new { Email = email });
+
+        if (response.IsSuccessStatusCode)
+        {
+            isWaiting = true;
+
+            // Запуск таймера
+            for (int i = 60; i > 0; i--)
+            {
+                timer = i;
+                StateHasChanged();
+                await Task.Delay(1000);
+            }
+
+            isWaiting = false;
+            StateHasChanged();
+        }
+        else
+        {
+            await Js.InvokeVoidAsync("alert", "Не вдалося надіслати лист повторно. Спробуйте пізніше.");
+        }
+    }
+
+    private void RedirectToLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

@@ -1,0 +1,11 @@
+﻿@inject NavigationManager Navigation
+
+<h3>Доступ заборонено</h3>
+<p>Будь ласка, увійдіть у систему.</p>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}

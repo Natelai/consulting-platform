@@ -1,0 +1,98 @@
+﻿using Consulting.Auth.Application.Abstractions;
+using Consulting.Auth.Application;
+using Consulting.Auth.Infrastructure.db;
+using Consulting.Auth.Infrastructure.db.Seeders;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Consulting.Auth.Application.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using FastEndpoints;
+
+namespace Consulting.Auth.Presentation.ProgramExtensions;
+
+public static class DependencyInjection
+{
+    public static async Task ApplyMigrationsAndSeedAsync(this IApplicationBuilder app)
+    {
+        using var scope = app.ApplicationServices.CreateScope();
+
+        var services = scope.ServiceProvider;
+        var dbContext = services.GetRequiredService<AppDbContext>();
+
+        try
+        {
+            //if (dbContext.Database.GetPendingMigrations() != null)
+            //{
+            //    await dbContext.Database.EnsureCreatedAsync();
+            //}
+
+            await dbContext.Database.MigrateAsync();
+            await IdentitySeeder.SeedAsync(services);
+        }
+        catch (Exception)
+        {
+            // TODO: Add logging
+            throw;
+        }
+    }
+
+    public static void AddServices(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddFastEndpoints();
+
+        builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddScoped<IEmailService, EmailService>();
+    }
+
+    public static void AddCustomAuth(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+        {
+            options.SignIn.RequireConfirmedAccount = false;
+        })
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
+        builder.Services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            var jwtSettings = builder.Configuration.GetSection("JwtSettings").Get<JwtSettings>();
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret)),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                RequireExpirationTime = true,
+                ValidateLifetime = true
+            };
+        });
+
+        builder.Services.AddAuthorization();
+    }
+
+    public static void AddCors(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("all-allowed", policy =>
+            {
+                policy.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            });
+        });
+    }
+
+    public static void AddOptions(this WebApplicationBuilder builder)
+    {
+        builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+    }
+}

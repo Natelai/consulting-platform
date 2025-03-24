@@ -1,4 +1,6 @@
-﻿@inject NavigationManager _nav
+﻿@using Frontend.Presentation.Services
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager _nav
 
 <RadzenStack Orientation="Orientation.Horizontal" Gap="25px" Style="width:100%" JustifyContent="JustifyContent.SpaceBetween">
     
@@ -26,13 +28,25 @@
         <NavLink href="/login" style="color: black; text-decoration: none;">
             <RadzenIcon Icon="account_circle" Style="font-size:28px; cursor:pointer;" />
         </NavLink>
-        <NavLink href="/login" style="color: black; text-decoration: none;">
-            <RadzenIcon Icon="logout" Style="font-size:28px; cursor:pointer; margin-left: 0;" />
+        <NavLink style="color: black; text-decoration: none;">
+            <RadzenIcon @onclick="Logout" Icon="logout" Style="font-size:28px; cursor:pointer; margin-left: 0;" />
         </NavLink>
     </RadzenStack>
 </RadzenStack>
 
 @code {
+    [Inject] private AuthenticationStateProvider AuthStateProvider { get; set; }
+    [Inject] private NavigationManager Navigation { get; set; }
+
+    private void Logout()
+    {
+        if (AuthStateProvider is CustomAuthStateProvider customAuth)
+        {
+            customAuth.MarkUserAsLoggedOut();
+        }
+        Navigation.NavigateTo("/login");
+    }
+
     private void OnTabChanged(int selectedIndex)
     {
         switch (selectedIndex)

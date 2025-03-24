@@ -32,12 +32,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Components/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/LoginPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlLnJhem9y
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Layout/AuthLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEF1dGhMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/EmailConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxFbWFpbENvbmZpcm1hdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/LoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/ResetPasswordEmailConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkRW1haWxDb25maXJtYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/ResetPasswordProcess.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkUHJvY2Vzcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/ResetPasswordRequest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkUmVxdWVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Auth/ResetPasswordResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/consulting-platform/ConsultingPlatform/Frontend/Frontend.Presentation/Pages/Test.razor]

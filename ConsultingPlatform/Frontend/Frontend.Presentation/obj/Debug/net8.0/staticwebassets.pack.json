@@ -9,12 +9,32 @@
       "PackagePath": "staticwebassets\\Frontend.Presentation.styles.css"
     },
     {
+      "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\assets\\error-icon.png",
+      "PackagePath": "staticwebassets\\assets\\error-icon.png"
+    },
+    {
+      "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\assets\\login-bg.png",
+      "PackagePath": "staticwebassets\\assets\\login-bg.png"
+    },
+    {
       "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\assets\\logo.png",
       "PackagePath": "staticwebassets\\assets\\logo.png"
     },
     {
+      "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\assets\\success-icon.png",
+      "PackagePath": "staticwebassets\\assets\\success-icon.png"
+    },
+    {
+      "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\assets\\waiting-icon.png",
+      "PackagePath": "staticwebassets\\assets\\waiting-icon.png"
+    },
+    {
       "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
     },
     {
       "Id": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
