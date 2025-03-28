@@ -454,3 +454,42 @@ $RECYCLE.BIN/
 /src/.NCrunch_BlotterCRM/StoredText
 /src/BlotterCRM.v3.ncrunchsolution
 /src/UserManagement/UserManagement.Presentation/wwwroot
+# Ignore Visual Studio for Mac settings
+.vscode/
+
+# Ignore Visual Studio 2019/2022 temporary files
+.vs2019/
+.vs2022/
+
+# Ignore build results and other temporary folders for various .NET project types
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore IntelliJ IDEA's system directory (if you are using JetBrains Rider or similar IDE)
+.idea/
+
+# Ignore Rider cache
+.idea/
+
+# Visual Studio Code specific files (you may want to exclude or include settings files)
+.vscode/*
+
+# ReSharper specific settings (optional)
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Debug/net8.0/Frontend.Presentation.csproj.AssemblyReference.cache
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Debug/net8.0/Frontend.Presentation.AssemblyInfo.cs
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Debug/net8.0/Frontend.Presentation.AssemblyInfoInputs.cache
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Debug/net8.0/Frontend.Presentation.assets.cache
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Debug/net8.0/Frontend.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Frontend.Presentation.csproj.nuget.dgspec.json
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Frontend.Presentation.csproj.nuget.g.props
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/Frontend.Presentation.csproj.nuget.g.targets
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/project.assets.json
+/ConsultingPlatform/Frontend/Frontend.Presentation/obj/project.nuget.cache
