@@ -1,3 +1,4 @@
+using Frontend.Models.Dtos;
 using Frontend.Presentation;
 using Frontend.Presentation.Services;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -8,6 +9,8 @@ using Radzen;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Services.AddScoped<DreyfusSurveyResults>();
 
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();

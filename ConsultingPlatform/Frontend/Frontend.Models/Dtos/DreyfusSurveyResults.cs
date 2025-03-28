@@ -47,4 +47,9 @@ public class DreyfusSurveyResults
         var allScores = _results.Values.SelectMany(scores => scores).ToList();
         return allScores.Count > 0 ? allScores.Average() : 0;
     }
+    public double GetOverallTotalScore()
+    {
+        var allScores = _results.Values.SelectMany(scores => scores).ToList();
+        return allScores.Sum();
+    }
 }

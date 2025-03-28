@@ -1,10 +1,10 @@
 ﻿@page "/test"
 @using Frontend.Models.Defaults
-@using Frontend.Models.Dtos
-@using Frontend.Models.Dtos.Enums
 @using Frontend.Presentation.Components
+@inject NavigationManager _nav
 @attribute [Authorize]
 
+@if (!_showResults){
 <RadzenCard Style="height:80vh">
 
     <div style=@(_selectedBlock != DreyfusBlock.Novice ? "display:none" : "")>
@@ -55,13 +55,13 @@
     </div>
     
     <div style=@(_selectedBlock != DreyfusBlock.Expert ? "display:none" : "")>
-        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question14.Question
+        <TestQuestion QuestionBlock="DreyfusBlock.Expert" Question=@DreyfusQuestions.Question14.Question
                       Options=@DreyfusQuestions.Question14.QuestionRates @bind-Answer="_results" />
 
-        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question15.Question
+        <TestQuestion QuestionBlock="DreyfusBlock.Expert" Question=@DreyfusQuestions.Question15.Question
                       Options=@DreyfusQuestions.Question15.QuestionRates @bind-Answer="_results" />
 
-        <TestQuestion QuestionBlock="DreyfusBlock.Proficient" Question=@DreyfusQuestions.Question16.Question
+        <TestQuestion QuestionBlock="DreyfusBlock.Expert" Question=@DreyfusQuestions.Question16.Question
                       Options=@DreyfusQuestions.Question16.QuestionRates @bind-Answer="_results" />
     </div>
 
@@ -78,7 +78,7 @@
         {
             <RadzenButton Text="Finish" ButtonStyle="ButtonStyle.Primary"
                           Style="width:100px;padding:0; background-color: mediumseagreen;"
-                          Click="NextHandler"/>
+                          Click="FinishTest" />
         }
         else
         {
@@ -90,10 +90,33 @@
     </div>
     
 </RadzenStack>
+}
+else
+{
+    <div style="justify-content:center !important;">
+    <RadzenCard Style="height:80vh; display: flex; flex-direction: column; justify-content: center;">
+        <h3 style="text-align: center; font-size: 24px; font-weight: bold; color: #2c6e49;">Ваш результат: @OverallScore</h3>
+        <p style="text-align: center; font-size: 18px; color: #555; margin-top: 10px;">@GetLevelDescription(OverallScore)</p>
+
+        <RadzenChart Width="700px" Height="400px">
+                <RadzenColumnSeries Data="@ChartData" CategoryProperty="Block" ValueProperty="Score" Fill="#81C784" />
+            <RadzenLegend Visible="false" />
+        </RadzenChart>
+
+        
+    </RadzenCard>
+    <RadzenButton Text="Пройти знову" Click="RestartTest" Style="margin-top:20px; justify-content:center !important; align-items:center; background-color: #BA68C8;" />
+    </div>
+}
 
 @code {
     private DreyfusSurveyResults _results = new();
     private DreyfusBlock _selectedBlock = DreyfusBlock.Novice;
+    private bool _showResults = false; 
+    public List<ChartDataPoint> ChartData { get; set; }
+    public double OverallScore;
+    private Dictionary<string, double> BlockScores;
+
 
     public void NextHandler()
     {
@@ -105,5 +128,45 @@
     {
         _selectedBlock--;
         StateHasChanged();
+    }
+
+    public void FinishTest()
+    {
+        _showResults = true;
+        BlockScores = Enum.GetValues(typeof(DreyfusBlock))
+            .Cast<DreyfusBlock>()
+            .ToDictionary(
+                block => block.ToString(),
+                block => _results.GetAverageScoreForBlock(block)
+            );
+        OverallScore = _results.GetOverallTotalScore();
+
+        ChartData = BlockScores.Select(kv => new ChartDataPoint
+        {
+            Block = kv.Key,
+            Score = kv.Value
+        }).ToList();
+
+        StateHasChanged();
+    }
+
+    public class ChartDataPoint
+    {
+        public string Block { get; set; } = "";
+        public double Score { get; set; }
+    }
+
+    private string GetLevelDescription(double score)
+    {
+        if (score < 30) return "Ви новачок. Ви тільки починаєте і ще не маєте великого досвіду.";
+        if (score < 50) return "Ви початківець. У вас є основи, але потрібно працювати над удосконаленням.";
+        if (score < 70) return "Ви компетентний. Ви вже маєте добрий рівень знань і досвіду.";
+        if (score < 90) return "Ви просунутий. Ви володієте глибокими знаннями і практичними навичками.";
+        return "Ви експерт. Ви володієте великим досвідом і здатні вирішувати складні задачі.";
+    }
+
+    private void RestartTest()
+    {
+        _selectedBlock = DreyfusBlock.Novice;
     }
 }
