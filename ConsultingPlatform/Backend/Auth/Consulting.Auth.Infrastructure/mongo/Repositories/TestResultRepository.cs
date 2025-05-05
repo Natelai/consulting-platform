@@ -19,8 +19,19 @@ namespace Consulting.Auth.Infrastructure.mongo.Repositories
         public async Task CreateAsync(TestResult result) =>
             await _collection.InsertOneAsync(result);
 
-        public async Task UpdateAsync(string userId, TestResult updatedResult) =>
-            await _collection.ReplaceOneAsync(x => x.UserId == userId, updatedResult);
+        public async Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore)
+        {
+            var filter = Builders<TestResult>.Filter.Eq(x => x.UserId, userId);
+            var update = Builders<TestResult>.Update.Set(x => x.DreyfusScore, dreyfusScore);
+            await _collection.UpdateOneAsync(filter, update);
+        }
+
+        public async Task UpdateCareerTraitsAsync(string userId, List<TraitScore> careerTraits)
+        {
+            var filter = Builders<TestResult>.Filter.Eq(x => x.UserId, userId);
+            var update = Builders<TestResult>.Update.Set(x => x.CareerTraits, careerTraits);
+            await _collection.UpdateOneAsync(filter, update);
+        }
 
         public async Task<List<TestResult>> GetAllAsync() =>
             await _collection.Find(_ => true).ToListAsync();

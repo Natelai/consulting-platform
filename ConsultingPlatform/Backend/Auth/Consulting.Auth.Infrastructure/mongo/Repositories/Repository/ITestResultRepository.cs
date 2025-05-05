@@ -3,9 +3,10 @@
     public interface ITestResultRepository
     {
         Task CreateAsync(TestResult result);
-        Task UpdateAsync(string userId, TestResult updatedResult);
         Task<List<TestResult>> GetAllAsync();
         Task<TestResult?> GetByUserIdAsync(string userId);
         Task<TestResult?> GetByIdAsync(string id);
+        Task UpdateCareerTraitsAsync(string userId, List<TraitScore> careerTraits);
+        Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore);
     }
 }

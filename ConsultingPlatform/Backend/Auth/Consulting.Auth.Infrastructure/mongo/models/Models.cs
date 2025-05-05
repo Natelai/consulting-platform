@@ -6,7 +6,7 @@ namespace Consulting.Auth.Infrastructure.mongo
     public class TraitScore
     {
         public string Trait { get; set; } = null!;
-        public int Score { get; set; }
+        public double Score { get; set; }
     }
 
     public class TestResult

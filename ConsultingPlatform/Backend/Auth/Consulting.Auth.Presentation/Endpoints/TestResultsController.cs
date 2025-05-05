@@ -17,20 +17,35 @@ namespace Consulting.Auth.Presentation.Endpoints
             _service = service;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TestResult result)
+        [HttpPost("dreyfus")]
+        public async Task<IActionResult> CreateDreyfus([FromBody] TestResult result)
         {
-            await _service.SaveResultAsync(result);
+            await _service.SaveDreyfusResultAsync(result);
             return Ok();
         }
 
-        [HttpPut("{userId}")]
-        public async Task<IActionResult> Update(string userId, [FromBody] TestResult result)
+        [HttpPost("career")]
+        public async Task<IActionResult> CreateCareer([FromBody] TestResult result)
         {
-            await _service.UpdateResultAsync(userId, result);
+            await _service.SaveCareerResultAsync(result);
             return Ok();
         }
 
+        [HttpPut("dreyfus/{userId}")]
+        public async Task<IActionResult> UpdateDreyfus(string userId, [FromBody] TestResult result)
+        {
+            await _service.UpdateDreyfusResultAsync(userId, result);
+            return Ok();
+        }
+
+        [HttpPut("career/{userId}")]
+        public async Task<IActionResult> UpdateCareer(string userId, [FromBody] TestResult result)
+        {
+            await _service.UpdateCareerResultAsync(userId, result);
+            return Ok();
+        }
+
+        // Інші ендпоінти для отримання даних
         [HttpGet("all")]
         public async Task<IActionResult> GetAll()
         {

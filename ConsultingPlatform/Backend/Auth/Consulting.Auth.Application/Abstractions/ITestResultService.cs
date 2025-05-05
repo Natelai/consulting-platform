@@ -9,8 +9,10 @@ namespace Consulting.Auth.Application.Abstractions
 {
     public interface ITestResultService
     {
-        Task SaveResultAsync(TestResult result);
-        Task UpdateResultAsync(string userId, TestResult updatedResult);
+        Task SaveDreyfusResultAsync(TestResult result);
+        Task SaveCareerResultAsync(TestResult result);
+        Task UpdateDreyfusResultAsync(string userId, TestResult updatedResult);
+        Task UpdateCareerResultAsync(string userId, TestResult updatedResult);
         Task<List<TestResult>> GetAllResultsAsync();
         Task<TestResult?> GetUserResultsAsync(string userId);
         Task<TestResult?> GetResultByIdAsync(string id);

@@ -18,13 +18,13 @@ namespace Consulting.Auth.Application
             _repository = repository;
         }
 
-        public async Task SaveResultAsync(TestResult result)
+        public async Task SaveDreyfusResultAsync(TestResult result)
         {
             var existing = await _repository.GetByUserIdAsync(result.UserId);
             if (existing != null)
             {
-                result.Id = existing.Id; // зберігаємо той самий ObjectId
-                await _repository.UpdateAsync(result.UserId, result);
+                result.Id = existing.Id;
+                await _repository.UpdateDreyfusScoreAsync(result.UserId, result.DreyfusScore);
             }
             else
             {
@@ -32,8 +32,25 @@ namespace Consulting.Auth.Application
             }
         }
 
-        public async Task UpdateResultAsync(string userId, TestResult updatedResult) =>
-            await _repository.UpdateAsync(userId, updatedResult);
+        public async Task SaveCareerResultAsync(TestResult result)
+        {
+            var existing = await _repository.GetByUserIdAsync(result.UserId);
+            if (existing != null)
+            {
+                result.Id = existing.Id;
+                await _repository.UpdateCareerTraitsAsync(result.UserId, result.CareerTraits);
+            }
+            else
+            {
+                await _repository.CreateAsync(result);
+            }
+        }
+
+        public async Task UpdateDreyfusResultAsync(string userId, TestResult updatedResult) =>
+            await _repository.UpdateDreyfusScoreAsync(userId, updatedResult.DreyfusScore);
+
+        public async Task UpdateCareerResultAsync(string userId, TestResult updatedResult) =>
+            await _repository.UpdateCareerTraitsAsync(userId, updatedResult.CareerTraits);
 
         public async Task<List<TestResult>> GetAllResultsAsync() =>
             await _repository.GetAllAsync();
