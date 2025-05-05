@@ -44,5 +44,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 await app.ApplyMigrationsAndSeedAsync();
+await app.InitializeMongoCollectionsAsync();
 
 app.Run();

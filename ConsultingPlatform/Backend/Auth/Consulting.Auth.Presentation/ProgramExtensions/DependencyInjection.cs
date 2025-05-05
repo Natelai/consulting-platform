@@ -10,6 +10,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using FastEndpoints;
+using Consulting.Auth.Infrastructure.mongo;
+using MongoDB.Driver;
+using MongoDB.Driver.Linq;
+using System.Threading.Tasks;
 
 namespace Consulting.Auth.Presentation.ProgramExtensions;
 
@@ -39,12 +43,35 @@ public static class DependencyInjection
         }
     }
 
+    public static async Task InitializeMongoCollectionsAsync(this IApplicationBuilder app)
+    {
+        using var scope = app.ApplicationServices.CreateScope();
+        var mongo = scope.ServiceProvider.GetRequiredService<MongoDbContext>();
+
+        var collections = await mongo.Database.ListCollectionNames().ToListAsync();
+
+        if (!collections.Contains("testResults"))
+            await mongo.Database.CreateCollectionAsync("testResults");
+
+        if (!collections.Contains("vacancies"))
+            await mongo.Database.CreateCollectionAsync("vacancies");
+
+        Console.WriteLine("MongoDB collections initialized.");
+    }
+
+
     public static void AddServices(this WebApplicationBuilder builder)
     {
         builder.Services.AddFastEndpoints();
 
         builder.Services.AddScoped<IAuthService, AuthService>();
         builder.Services.AddScoped<IEmailService, EmailService>();
+
+        builder.Services.Configure<MongoDbSettings>(
+            builder.Configuration.GetSection("MongoDbSettings"));
+
+        builder.Services.AddSingleton<MongoDbContext>();
+
     }
 
     public static void AddCustomAuth(this WebApplicationBuilder builder)
