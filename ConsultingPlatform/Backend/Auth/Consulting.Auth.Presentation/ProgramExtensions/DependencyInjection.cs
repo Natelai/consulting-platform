@@ -14,6 +14,8 @@ using Consulting.Auth.Infrastructure.mongo;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using System.Threading.Tasks;
+using Consulting.Auth.Infrastructure.mongo.Repositories.Repository;
+using Consulting.Auth.Infrastructure.mongo.Repositories;
 
 namespace Consulting.Auth.Presentation.ProgramExtensions;
 
@@ -71,6 +73,8 @@ public static class DependencyInjection
             builder.Configuration.GetSection("MongoDbSettings"));
 
         builder.Services.AddSingleton<MongoDbContext>();
+        builder.Services.AddScoped<ITestResultRepository, TestResultRepository>();
+        builder.Services.AddScoped<ITestResultService, TestResultService>();
 
     }
 

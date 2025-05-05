@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Consulting.Auth.Contracts\Consulting.Auth.Contracts.csproj" />
+    <ProjectReference Include="..\Consulting.Auth.Infrastructure\Consulting.Auth.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
