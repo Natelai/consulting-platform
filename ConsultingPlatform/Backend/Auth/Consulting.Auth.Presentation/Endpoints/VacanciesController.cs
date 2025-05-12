@@ -51,5 +51,13 @@ namespace Consulting.Auth.Presentation.Endpoints
             await _service.DeleteVacancyAsync(id);
             return Ok();
         }
+
+        [HttpGet("matched/{userId}")]
+        public async Task<IActionResult> GetMatchedVacancies(string userId)
+        {
+            var results = await _service.GetSortedVacanciesForUserAsync(userId);
+            return Ok(results);
+        }
+
     }
 }

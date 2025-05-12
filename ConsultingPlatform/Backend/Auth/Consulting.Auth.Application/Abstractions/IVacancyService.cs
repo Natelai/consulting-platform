@@ -9,5 +9,7 @@ namespace Consulting.Auth.Application.Abstractions
         Task<Vacancy?> GetVacancyByIdAsync(string id);
         Task UpdateVacancyAsync(Vacancy vacancy);
         Task DeleteVacancyAsync(string id);
+        Task<List<VacancyMatchResult>> GetSortedVacanciesForUserAsync(string userId);
+
     }
 }
