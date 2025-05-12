@@ -75,6 +75,8 @@ public static class DependencyInjection
         builder.Services.AddSingleton<MongoDbContext>();
         builder.Services.AddScoped<ITestResultRepository, TestResultRepository>();
         builder.Services.AddScoped<ITestResultService, TestResultService>();
+        builder.Services.AddScoped<IVacancyRepository, VacancyRepository>();
+        builder.Services.AddScoped<IVacancyService, VacancyService>();
 
     }
 
