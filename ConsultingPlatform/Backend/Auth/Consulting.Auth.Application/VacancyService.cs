@@ -40,7 +40,8 @@ namespace Consulting.Auth.Application
         public async Task<List<VacancyMatchResult>> GetSortedVacanciesForUserAsync(string userId)
         {
             var testResult = await _testResultRepository.GetByUserIdAsync(userId);
-            if (testResult == null) return new List<VacancyMatchResult>();
+            if (testResult == null || testResult.CareerTraits == null || testResult.DreyfusScore == 0 || !testResult.CareerTraits.Any())
+                throw new InvalidOperationException("Тести не пройдено");
 
             var vacancies = await _repository.GetAllAsync();
             var result = new List<VacancyMatchResult>();

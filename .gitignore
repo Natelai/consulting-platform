@@ -493,3 +493,8 @@ _ReSharper*/
 /ConsultingPlatform/Frontend/Frontend.Presentation/obj/Frontend.Presentation.csproj.nuget.g.targets
 /ConsultingPlatform/Frontend/Frontend.Presentation/obj/project.assets.json
 /ConsultingPlatform/Frontend/Frontend.Presentation/obj/project.nuget.cache
+# Local folders to ignore
+.vs/
+ConsultingPlatform/.vs/
+ConsultingPlatform/scripts/mongo/mongo_data/
+*.sln

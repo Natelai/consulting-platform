@@ -18,6 +18,7 @@ namespace Consulting.Auth.Infrastructure.mongo
         public int DreyfusScore { get; set; }
 
         public List<TraitScore> CareerTraits { get; set; } = new();
+        public Dictionary<string, int> ScoresByBlock { get; set; } = new();
     }
 
     public class Vacancy
@@ -30,5 +31,8 @@ namespace Consulting.Auth.Infrastructure.mongo
         public int RequiredDreyfusScore { get; set; }
 
         public List<TraitScore> RequiredTraits { get; set; } = new();
+
+        public string Type { get; set; } = null!; 
+        public string Link { get; set; } = null!;
     }
 }

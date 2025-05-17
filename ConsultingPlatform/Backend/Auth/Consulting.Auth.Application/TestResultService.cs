@@ -24,7 +24,7 @@ namespace Consulting.Auth.Application
             if (existing != null)
             {
                 result.Id = existing.Id;
-                await _repository.UpdateDreyfusScoreAsync(result.UserId, result.DreyfusScore);
+                await _repository.UpdateDreyfusScoreAsync(result.UserId, result.DreyfusScore, result.ScoresByBlock);
             }
             else
             {
@@ -47,7 +47,7 @@ namespace Consulting.Auth.Application
         }
 
         public async Task UpdateDreyfusResultAsync(string userId, TestResult updatedResult) =>
-            await _repository.UpdateDreyfusScoreAsync(userId, updatedResult.DreyfusScore);
+            await _repository.UpdateDreyfusScoreAsync(userId, updatedResult.DreyfusScore, updatedResult.ScoresByBlock);
 
         public async Task UpdateCareerResultAsync(string userId, TestResult updatedResult) =>
             await _repository.UpdateCareerTraitsAsync(userId, updatedResult.CareerTraits);

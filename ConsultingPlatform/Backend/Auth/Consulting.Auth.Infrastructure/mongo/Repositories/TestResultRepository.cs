@@ -19,10 +19,12 @@ namespace Consulting.Auth.Infrastructure.mongo.Repositories
         public async Task CreateAsync(TestResult result) =>
             await _collection.InsertOneAsync(result);
 
-        public async Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore)
+        public async Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore, Dictionary<string, int> scoresByBlock)
         {
             var filter = Builders<TestResult>.Filter.Eq(x => x.UserId, userId);
-            var update = Builders<TestResult>.Update.Set(x => x.DreyfusScore, dreyfusScore);
+            var update = Builders<TestResult>.Update
+                .Set(x => x.DreyfusScore, dreyfusScore)
+                .Set(x => x.ScoresByBlock, scoresByBlock);
             await _collection.UpdateOneAsync(filter, update);
         }
 

@@ -7,6 +7,6 @@
         Task<TestResult?> GetByUserIdAsync(string userId);
         Task<TestResult?> GetByIdAsync(string id);
         Task UpdateCareerTraitsAsync(string userId, List<TraitScore> careerTraits);
-        Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore);
+        Task UpdateDreyfusScoreAsync(string userId, int dreyfusScore, Dictionary<string, int> scoresByBlock);
     }
 }

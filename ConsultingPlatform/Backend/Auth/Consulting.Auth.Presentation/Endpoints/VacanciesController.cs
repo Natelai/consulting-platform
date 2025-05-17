@@ -55,8 +55,15 @@ namespace Consulting.Auth.Presentation.Endpoints
         [HttpGet("matched/{userId}")]
         public async Task<IActionResult> GetMatchedVacancies(string userId)
         {
-            var results = await _service.GetSortedVacanciesForUserAsync(userId);
-            return Ok(results);
+            try
+            {
+                var results = await _service.GetSortedVacanciesForUserAsync(userId);
+                return Ok(results);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Forbid(ex.Message);
+            }
         }
 
     }
