@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Consulting.Auth.Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,11 +18,13 @@ public class AppDbContext : IdentityDbContext<IdentityUser>
     {
     }
 
+    public virtual DbSet<User> Users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
 
-        builder.Entity<IdentityUser>()
+        builder.Entity<User>()
             .HasIndex(u => u.Email)
             .IsUnique();
     }

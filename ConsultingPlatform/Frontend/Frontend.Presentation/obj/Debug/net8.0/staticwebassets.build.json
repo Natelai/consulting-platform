@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G6vI8VlxjOacGoiVMRuD4kdZ/MNbuHydoVambnd94x0=",
+  "Hash": "IfPGFKYFrO2Qb/vdF0gcGsr9VjrYV9GpG1aGZ6Fc/Is=",
   "Source": "Frontend.Presentation",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "uyfvrtj2al",
-      "Integrity": "al64GIn9UAmMIGPh3JQmsrmOEWFZ6kqKFRNt5jx3Fg0=",
+      "Fingerprint": "0gh71joitg",
+      "Integrity": "ECEgZ0pPtx8BPbpLAB/d2uy9VoZy0ZwUHimoD+61XT8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "wmb8juztt5",
-      "Integrity": "GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys=",
+      "Fingerprint": "kkyxk0wh9c",
+      "Integrity": "vP5pEYrlmejq34o+RrMGZ0Yyx9+UsklUAk9hcGeI6EY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Models\\bin\\Debug\\net8.0\\Frontend.Models.pdb"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "220xav4v7v",
-      "Integrity": "iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94=",
+      "Fingerprint": "kuob6tw21j",
+      "Integrity": "jCyCymWIDIE+d4ZuKI4LWw4TSxADK0oj0L6ips5TMco=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\webcil\\Frontend.Models.wasm"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "hjntzd61rw",
-      "Integrity": "bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0=",
+      "Fingerprint": "mftkid3jzj",
+      "Integrity": "/pfu7EtnrSCdoXOhKZKOguKvTuknmdLQHoFYRZ2ato0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\Frontend.Presentation.pdb"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "v8z9n496hm",
-      "Integrity": "Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE=",
+      "Fingerprint": "kb34dt1jfp",
+      "Integrity": "MIXaW9BXufvI6A28aaLBa1BYdF0aG4/vX99Kq8D2EX4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\webcil\\Frontend.Presentation.wasm"
@@ -5225,7 +5225,7 @@
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.VisualBasic.wasm"
     },
     {
-      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-220xav4v7v.gz",
+      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-kuob6tw21j.gz",
       "SourceId": "Frontend.Presentation",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\",
@@ -5239,8 +5239,8 @@
       "RelatedAsset": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Models.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "264gp5c1j8",
-      "Integrity": "5pnoHh9sigT5crSYWVOs93YU7ScDeirX90Z47aGOJSM=",
+      "Fingerprint": "pp7tylt39w",
+      "Integrity": "s817EdSNzlasUMzfzSAR16dOnCIIjFZ1NP9O/sMpTac=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Models.wasm"
@@ -7220,7 +7220,7 @@
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Transactions.wasm"
     },
     {
-      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-uyfvrtj2al.gz",
+      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-0gh71joitg.gz",
       "SourceId": "Frontend.Presentation",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\",
@@ -7234,8 +7234,8 @@
       "RelatedAsset": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qoa2k7twsz",
-      "Integrity": "Zn0u1VY3Owrd0DFf6nZBkvIGBJz7/kRogMMCp8OFjzM=",
+      "Fingerprint": "nfpsej7nqa",
+      "Integrity": "w5l44Oq/y6Rg/A8EEHmJYqjluNOuNjlKvMP3lfQA42c=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7367,7 +7367,7 @@
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.wasm"
     },
     {
-      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-hjntzd61rw.gz",
+      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-mftkid3jzj.gz",
       "SourceId": "Frontend.Presentation",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\",
@@ -7381,8 +7381,8 @@
       "RelatedAsset": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Presentation.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jhr4kdq4oq",
-      "Integrity": "2RPBNrEsNwf7TIo66uaU3VMFMKVyRt0avHYNsb7oWjo=",
+      "Fingerprint": "bppjjhm04f",
+      "Integrity": "3z/1XsNioGMu5xWKHGpYML0KtdmCvKTuhMjEYADbrI4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Presentation.pdb"
@@ -7451,7 +7451,7 @@
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.SecureString.wasm"
     },
     {
-      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-wmb8juztt5.gz",
+      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-kkyxk0wh9c.gz",
       "SourceId": "Frontend.Presentation",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\",
@@ -7465,8 +7465,8 @@
       "RelatedAsset": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Models.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1111xc5gdo",
-      "Integrity": "dXx6stWEIudTwu/cD+4cjHYtygcMK7wjPIhTS7MRX0g=",
+      "Fingerprint": "sohvpfr2q1",
+      "Integrity": "TPAnrZ/ld7RGR4u828dpm70jM2NzJvfY3KcQ+R1yE6I=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Models.pdb"
@@ -8186,7 +8186,7 @@
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Win32.Primitives.wasm"
     },
     {
-      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-v8z9n496hm.gz",
+      "Identity": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-kb34dt1jfp.gz",
       "SourceId": "Frontend.Presentation",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\",
@@ -8200,8 +8200,8 @@
       "RelatedAsset": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Presentation.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "21o4yvy6xa",
-      "Integrity": "Ws98VPdE46vp0qu65tW6z452HMHziUttEMY6/QT3Jds=",
+      "Fingerprint": "9konqas7hv",
+      "Integrity": "5+GDkH+XD/yiJnFVE6oR0lQhfJEFE+GPP4wtbpzWuLs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Presentation.wasm"
@@ -12756,11 +12756,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"al64GIn9UAmMIGPh3JQmsrmOEWFZ6kqKFRNt5jx3Fg0=\""
+          "Value": "\"ECEgZ0pPtx8BPbpLAB/d2uy9VoZy0ZwUHimoD+61XT8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:10:01 GMT"
+          "Value": "Wed, 21 May 2025 20:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12770,18 +12770,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-al64GIn9UAmMIGPh3JQmsrmOEWFZ6kqKFRNt5jx3Fg0="
+          "Value": "sha256-ECEgZ0pPtx8BPbpLAB/d2uy9VoZy0ZwUHimoD+61XT8="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-uyfvrtj2al.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-0gh71joitg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000110387460"
+          "Quality": "0.000110472824"
         }
       ],
       "ResponseHeaders": [
@@ -12791,15 +12791,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9058"
+          "Value": "9051"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zn0u1VY3Owrd0DFf6nZBkvIGBJz7/kRogMMCp8OFjzM=\""
+          "Value": "\"w5l44Oq/y6Rg/A8EEHmJYqjluNOuNjlKvMP3lfQA42c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:03 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12819,19 +12819,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"al64GIn9UAmMIGPh3JQmsrmOEWFZ6kqKFRNt5jx3Fg0=\""
+          "Value": "W/\"ECEgZ0pPtx8BPbpLAB/d2uy9VoZy0ZwUHimoD+61XT8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-al64GIn9UAmMIGPh3JQmsrmOEWFZ6kqKFRNt5jx3Fg0="
+          "Value": "sha256-ECEgZ0pPtx8BPbpLAB/d2uy9VoZy0ZwUHimoD+61XT8="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-uyfvrtj2al.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ltbv9bc6e9-0gh71joitg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12840,7 +12840,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9058"
+          "Value": "9051"
         },
         {
           "Name": "Content-Type",
@@ -12848,11 +12848,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zn0u1VY3Owrd0DFf6nZBkvIGBJz7/kRogMMCp8OFjzM=\""
+          "Value": "\"w5l44Oq/y6Rg/A8EEHmJYqjluNOuNjlKvMP3lfQA42c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:03 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12870,7 +12870,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Zn0u1VY3Owrd0DFf6nZBkvIGBJz7/kRogMMCp8OFjzM="
+          "Value": "sha256-w5l44Oq/y6Rg/A8EEHmJYqjluNOuNjlKvMP3lfQA42c="
         }
       ]
     },
@@ -13989,11 +13989,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys=\""
+          "Value": "\"vP5pEYrlmejq34o+RrMGZ0Yyx9+UsklUAk9hcGeI6EY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:42 GMT"
+          "Value": "Wed, 21 May 2025 20:27:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14003,18 +14003,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys="
+          "Value": "sha256-vP5pEYrlmejq34o+RrMGZ0Yyx9+UsklUAk9hcGeI6EY="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Models.pdb",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-wmb8juztt5.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-kkyxk0wh9c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000132327643"
+          "Quality": "0.000131475151"
         }
       ],
       "ResponseHeaders": [
@@ -14024,15 +14024,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7556"
+          "Value": "7605"
         },
         {
           "Name": "ETag",
-          "Value": "\"dXx6stWEIudTwu/cD+4cjHYtygcMK7wjPIhTS7MRX0g=\""
+          "Value": "\"TPAnrZ/ld7RGR4u828dpm70jM2NzJvfY3KcQ+R1yE6I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:42 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14052,19 +14052,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys=\""
+          "Value": "W/\"vP5pEYrlmejq34o+RrMGZ0Yyx9+UsklUAk9hcGeI6EY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GHimyIR3SC/KACIKXCIApL2aj3tFJ3DmLOrmfrn68Ys="
+          "Value": "sha256-vP5pEYrlmejq34o+RrMGZ0Yyx9+UsklUAk9hcGeI6EY="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Models.pdb.gz",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-wmb8juztt5.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\nru74jpnws-kkyxk0wh9c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14073,7 +14073,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7556"
+          "Value": "7605"
         },
         {
           "Name": "Content-Type",
@@ -14081,11 +14081,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dXx6stWEIudTwu/cD+4cjHYtygcMK7wjPIhTS7MRX0g=\""
+          "Value": "\"TPAnrZ/ld7RGR4u828dpm70jM2NzJvfY3KcQ+R1yE6I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:42 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14103,7 +14103,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dXx6stWEIudTwu/cD+4cjHYtygcMK7wjPIhTS7MRX0g="
+          "Value": "sha256-TPAnrZ/ld7RGR4u828dpm70jM2NzJvfY3KcQ+R1yE6I="
         }
       ]
     },
@@ -14126,11 +14126,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94=\""
+          "Value": "\"jCyCymWIDIE+d4ZuKI4LWw4TSxADK0oj0L6ips5TMco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:44 GMT"
+          "Value": "Wed, 21 May 2025 20:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14140,18 +14140,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94="
+          "Value": "sha256-jCyCymWIDIE+d4ZuKI4LWw4TSxADK0oj0L6ips5TMco="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Models.wasm",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-220xav4v7v.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-kuob6tw21j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000240847784"
+          "Quality": "0.000236016049"
         }
       ],
       "ResponseHeaders": [
@@ -14161,15 +14161,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4151"
+          "Value": "4236"
         },
         {
           "Name": "ETag",
-          "Value": "\"5pnoHh9sigT5crSYWVOs93YU7ScDeirX90Z47aGOJSM=\""
+          "Value": "\"s817EdSNzlasUMzfzSAR16dOnCIIjFZ1NP9O/sMpTac=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:44 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14189,19 +14189,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94=\""
+          "Value": "W/\"jCyCymWIDIE+d4ZuKI4LWw4TSxADK0oj0L6ips5TMco=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iqQa4kRKLlRPyv6AGaUCAHn6XwFqhWXW7fISLzL3X94="
+          "Value": "sha256-jCyCymWIDIE+d4ZuKI4LWw4TSxADK0oj0L6ips5TMco="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Models.wasm.gz",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-220xav4v7v.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\6x56nm5lzx-kuob6tw21j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14210,7 +14210,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4151"
+          "Value": "4236"
         },
         {
           "Name": "Content-Type",
@@ -14218,11 +14218,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5pnoHh9sigT5crSYWVOs93YU7ScDeirX90Z47aGOJSM=\""
+          "Value": "\"s817EdSNzlasUMzfzSAR16dOnCIIjFZ1NP9O/sMpTac=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 11:22:44 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14240,7 +14240,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5pnoHh9sigT5crSYWVOs93YU7ScDeirX90Z47aGOJSM="
+          "Value": "sha256-s817EdSNzlasUMzfzSAR16dOnCIIjFZ1NP9O/sMpTac="
         }
       ]
     },
@@ -14255,7 +14255,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59416"
+          "Value": "59588"
         },
         {
           "Name": "Content-Type",
@@ -14263,11 +14263,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0=\""
+          "Value": "\"/pfu7EtnrSCdoXOhKZKOguKvTuknmdLQHoFYRZ2ato0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:10:01 GMT"
+          "Value": "Wed, 21 May 2025 20:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14277,18 +14277,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0="
+          "Value": "sha256-/pfu7EtnrSCdoXOhKZKOguKvTuknmdLQHoFYRZ2ato0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Presentation.pdb",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-hjntzd61rw.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-mftkid3jzj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000020680812"
+          "Quality": "0.000019329274"
         }
       ],
       "ResponseHeaders": [
@@ -14298,15 +14298,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48353"
+          "Value": "51734"
         },
         {
           "Name": "ETag",
-          "Value": "\"2RPBNrEsNwf7TIo66uaU3VMFMKVyRt0avHYNsb7oWjo=\""
+          "Value": "\"3z/1XsNioGMu5xWKHGpYML0KtdmCvKTuhMjEYADbrI4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:02 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14326,19 +14326,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0=\""
+          "Value": "W/\"/pfu7EtnrSCdoXOhKZKOguKvTuknmdLQHoFYRZ2ato0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bRMUUpIRdkdWmyDpOx2YPQUOla0aBu5DELPzDNFt6k0="
+          "Value": "sha256-/pfu7EtnrSCdoXOhKZKOguKvTuknmdLQHoFYRZ2ato0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Presentation.pdb.gz",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-hjntzd61rw.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\n0e8lr34ak-mftkid3jzj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14347,7 +14347,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48353"
+          "Value": "51734"
         },
         {
           "Name": "Content-Type",
@@ -14355,11 +14355,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2RPBNrEsNwf7TIo66uaU3VMFMKVyRt0avHYNsb7oWjo=\""
+          "Value": "\"3z/1XsNioGMu5xWKHGpYML0KtdmCvKTuhMjEYADbrI4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:02 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14377,7 +14377,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2RPBNrEsNwf7TIo66uaU3VMFMKVyRt0avHYNsb7oWjo="
+          "Value": "sha256-3z/1XsNioGMu5xWKHGpYML0KtdmCvKTuhMjEYADbrI4="
         }
       ]
     },
@@ -14392,7 +14392,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "66325"
+          "Value": "66837"
         },
         {
           "Name": "Content-Type",
@@ -14400,11 +14400,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE=\""
+          "Value": "\"MIXaW9BXufvI6A28aaLBa1BYdF0aG4/vX99Kq8D2EX4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:10:01 GMT"
+          "Value": "Wed, 21 May 2025 20:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14414,18 +14414,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE="
+          "Value": "sha256-MIXaW9BXufvI6A28aaLBa1BYdF0aG4/vX99Kq8D2EX4="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Presentation.wasm",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-v8z9n496hm.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-kb34dt1jfp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040566306"
+          "Quality": "0.000037232854"
         }
       ],
       "ResponseHeaders": [
@@ -14435,15 +14435,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24650"
+          "Value": "26857"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ws98VPdE46vp0qu65tW6z452HMHziUttEMY6/QT3Jds=\""
+          "Value": "\"5+GDkH+XD/yiJnFVE6oR0lQhfJEFE+GPP4wtbpzWuLs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:02 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14463,19 +14463,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE=\""
+          "Value": "W/\"MIXaW9BXufvI6A28aaLBa1BYdF0aG4/vX99Kq8D2EX4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Uc7qI+nd+dH7k8zlC/0d1n1nF6DTVl7tITgJxCKqTOE="
+          "Value": "sha256-MIXaW9BXufvI6A28aaLBa1BYdF0aG4/vX99Kq8D2EX4="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Presentation.wasm.gz",
-      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-v8z9n496hm.gz",
+      "AssetFile": "C:\\Projects\\consulting-platform\\ConsultingPlatform\\Frontend\\Frontend.Presentation\\obj\\Debug\\net8.0\\compressed\\ucrrddj8my-kb34dt1jfp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14484,7 +14484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24650"
+          "Value": "26857"
         },
         {
           "Name": "Content-Type",
@@ -14492,11 +14492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ws98VPdE46vp0qu65tW6z452HMHziUttEMY6/QT3Jds=\""
+          "Value": "\"5+GDkH+XD/yiJnFVE6oR0lQhfJEFE+GPP4wtbpzWuLs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 01:54:02 GMT"
+          "Value": "Tue, 20 May 2025 21:02:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14514,7 +14514,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ws98VPdE46vp0qu65tW6z452HMHziUttEMY6/QT3Jds="
+          "Value": "sha256-5+GDkH+XD/yiJnFVE6oR0lQhfJEFE+GPP4wtbpzWuLs="
         }
       ]
     },
