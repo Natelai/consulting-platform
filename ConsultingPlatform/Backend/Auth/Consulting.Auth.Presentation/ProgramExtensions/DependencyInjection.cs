@@ -16,6 +16,7 @@ using MongoDB.Driver.Linq;
 using System.Threading.Tasks;
 using Consulting.Auth.Infrastructure.mongo.Repositories.Repository;
 using Consulting.Auth.Infrastructure.mongo.Repositories;
+using Consulting.Auth.Domain;
 
 namespace Consulting.Auth.Presentation.ProgramExtensions;
 
@@ -82,7 +83,7 @@ public static class DependencyInjection
 
     public static void AddCustomAuth(this WebApplicationBuilder builder)
     {
-        builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+        builder.Services.AddIdentity<User, IdentityRole>(options =>
         {
             options.SignIn.RequireConfirmedAccount = false;
         })

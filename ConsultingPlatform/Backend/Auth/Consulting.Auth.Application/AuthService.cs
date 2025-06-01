@@ -2,6 +2,7 @@
 using Consulting.Auth.Application.Helpers;
 using Consulting.Auth.Application.Models;
 using Consulting.Auth.Contracts.Responses;
+using Consulting.Auth.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -13,14 +14,14 @@ using System.Text;
 namespace Consulting.Auth.Application;
 
 public class AuthService(
-    UserManager<IdentityUser> userManager,
-    SignInManager<IdentityUser> signInManager,
+    UserManager<User> userManager,
+    SignInManager<User> signInManager,
     IEmailService emailService,
     IOptions<JwtSettings> jwtSettings)
     : IAuthService
 {
-    private readonly UserManager<IdentityUser> _userManager = userManager;
-    private readonly SignInManager<IdentityUser> _signInManager = signInManager;
+    private readonly UserManager<User> _userManager = userManager;
+    private readonly SignInManager<User> _signInManager = signInManager;
     private readonly JwtSettings _jwtSettings = jwtSettings.Value;
     private readonly IEmailService _emailService = emailService;
 
@@ -50,7 +51,7 @@ public class AuthService(
 
     public async Task<bool> RegisterUserAsync(string email, string password)
     {
-        var user = new IdentityUser 
+        var user = new User
         { 
             UserName = email, 
             Email = email, 
@@ -110,7 +111,7 @@ public class AuthService(
         return true;
     }
 
-    private string GetSecurityToken(IdentityUser? user)
+    private string GetSecurityToken(User? user)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.UTF8.GetBytes(_jwtSettings.Secret);

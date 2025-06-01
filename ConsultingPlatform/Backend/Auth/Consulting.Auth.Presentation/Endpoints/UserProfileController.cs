@@ -1,5 +1,7 @@
-﻿using Consulting.Auth.Infrastructure.db;
+﻿using Consulting.Auth.Domain;
+using Consulting.Auth.Infrastructure.db;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
@@ -8,9 +10,10 @@ namespace Consulting.Auth.Presentation.Endpoints;
 
 [ApiController]
 [Route("profile")]
-public class UserProfileController(AppDbContext context) : ControllerBase
+public class UserProfileController(AppDbContext context, UserManager<User> userManager) : ControllerBase
 {
     private readonly AppDbContext _context = context;
+    private readonly UserManager<User> _userManager = userManager;
 
     [HttpGet]
     public async Task<IActionResult> GetMyProfileAsync()
@@ -48,7 +51,7 @@ public class UserProfileController(AppDbContext context) : ControllerBase
             return BadRequest();
         }
 
-        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        var user = await _userManager.FindByEmailAsync(email);
 
         if (user is null)
         {
@@ -71,7 +74,7 @@ public class UserProfileController(AppDbContext context) : ControllerBase
             return BadRequest();
         }
 
-        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        var user = await _userManager.FindByEmailAsync(email);
 
         if (user is null)
         {
@@ -94,7 +97,7 @@ public class UserProfileController(AppDbContext context) : ControllerBase
             return BadRequest();
         }
 
-        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        var user = await _userManager.FindByEmailAsync(email);
 
         if (user is null)
         {
@@ -117,7 +120,7 @@ public class UserProfileController(AppDbContext context) : ControllerBase
             return BadRequest();
         }
 
-        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        var user = await _userManager.FindByEmailAsync(email);
 
         if (user is null)
         {
@@ -128,5 +131,5 @@ public class UserProfileController(AppDbContext context) : ControllerBase
         await _context.SaveChangesAsync();
 
         return Ok();
-    }
+    }   
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Consulting.Auth.Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,7 +10,7 @@ public static class IdentitySeeder
     public static async Task SeedAsync(IServiceProvider serviceProvider)
     {
         using var scope = serviceProvider.CreateScope();
-        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
         await SeedRolesAsync(roleManager);
@@ -29,18 +30,18 @@ public static class IdentitySeeder
         }
     }
 
-    private static async Task SeedUsersAsync(UserManager<IdentityUser> userManager)
+    private static async Task SeedUsersAsync(UserManager<User> userManager)
     {
         if (!await userManager.Users.AnyAsync())
         {
-            var user1 = new IdentityUser
+            var user1 = new User
             {
                 UserName = "user1@example.com",
                 Email = "user1@example.com",
                 EmailConfirmed = true
             };
 
-            var user2 = new IdentityUser
+            var user2 = new User
             {
                 UserName = "user2@example.com",
                 Email = "user2@example.com",
